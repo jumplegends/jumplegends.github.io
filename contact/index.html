@@ -1,11 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact us</title>
+    <title>Contact - Jump Legends</title>
+    <link rel="stylesheet" href="../src/css/contact.css">
 </head>
+
 <body>
-    dsa
+    <script src="../src/js/hamburger.js"></script>
+    <div class="container-head">
+        <div class="logo">
+            <img src="../src/img/icon.ico" alt="Jump Legends">
+        </div>
+
+        <nav>
+            <a href="../">Home</a>
+            <a href="/about">About</a>
+            <a href="../discord.html">Discord</a>
+            <a href="/contact">Contact</a>
+        </nav>
+
+        <div class="hamburger-menu">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+    </div>
+
+    <div class="container">
+        <h1>Contact Us</h1>
+        Du erreichst uns auf folgenden Wegen:
+
+        <div class="contact-container">
+            <div class="contact-item discord" style="width: 50%; cursor: pointer;">
+                <img src="https://1000logos.net/wp-content/uploads/2021/06/Discord-logo.png" alt="Discord">
+                <p>Discord</p>
+                <a href="https://dsc.gg/jmplegends">https://dsc.gg/jmplegends</a>
+            </div>
+
+            <div class="contact-item email" style="width: 50%; cursor: pointer;">
+                <img src="https://logowik.com/content/uploads/images/513_email.jpg" alt="Email">
+                <p>Email</p>
+                <a href="mailto:jumplegendsofficial@gmail.com">jumplegendsofficial@gmail.com</a>
+            </div>
+        </div>
+    </div>
+
+
+    <footer>
+        <p>&copy; <span id="currentYear"></span> Jump Legends all rights reserved.</p>
+    </footer>
+
+    <script>
+        document.getElementById("currentYear").innerHTML = new Date().getFullYear();
+
+        const discord = document.querySelector(".discord");
+        const email = document.querySelector(".email");
+
+        discord.addEventListener("click", () => {
+            window.location.href = "https://dsc.gg/jmplegends";
+        });
+
+        email.addEventListener("click", () => {
+            window.location.href = "mailto:jumplegendsofficial@gmail.com";
+        });
+    </script>
 </body>
+
 </html>

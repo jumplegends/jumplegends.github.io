@@ -1,11 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About us</title>
+    <title>About Us - Jump Legends</title>
+    <link rel="stylesheet" href="../src/css/about.css">
 </head>
+
 <body>
-    asd
+    <script src="../src/js/hamburger.js"></script>
+    <div class="container-head">
+        <div class="logo">
+            <img src="../src/img/icon.ico" alt="Jump Legends">
+        </div>
+
+        <nav>
+            <a href="../">Home</a>
+            <a href="/about">About</a>
+            <a href="../discord.html">Discord</a>
+            <a href="/contact">Contact</a>
+        </nav>
+
+        <div class="hamburger-menu">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+    </div>
+
+    <div class="container">
+        <h1>About Us</h1>
+
+        <p>Willkommen bei Jump Legends! Unsere Reise begann mit dem Besitzer, Semaja,
+            der beschloss, seine Kenntnisse in Python und Pygame zu erweitern. Der Miteigentümer warf eines Tages einen
+            Blick auf das Spiel und wollte
+            zu seiner weiteren Entwicklung beitragen.</p>
+
+        <p>Wenn du daran interessiert bist, unserem Projekt beizutreten, komme auf unseren Discord Server und schau dich
+            in Kanal <a
+                href="https://discord.com/channels/921046101107286057/922148571770404924">#😮¦du-möchtest-dich-an-unserem-projekt-beiteiligen</a>
+            um!
+        </p>
+
+
+    </div>
+    </div>
+
+    <footer>
+        <p>&copy; <span id="currentYear"></span> Jump Legends all rights reserved.</p>
+    </footer>
+
+    <script>
+        document.getElementById("currentYear").innerHTML = new Date().getFullYear();
+    </script>
 </body>
+
 </html>
