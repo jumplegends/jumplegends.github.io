@@ -45,7 +45,7 @@ nav a {
     background-repeat: no-repeat;
 }
 
-.imageholder h1 {
+.imageholder .bgtxt {
     color: white;
     text-align: center;
     font-size: 7rem;
