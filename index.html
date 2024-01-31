@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jump Legends</title>
+    <link rel="stylesheet" href="src/css/style.css">
+</head>
+
+<body>
+    <script src="src/cjs/hamburger.js"></script>
+    <div class="container-head">
+        <div class="logo">
+            <img src="src/img/icon.ico" alt="Jump Legends">
+        </div>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="/about">About</a>
+            <a href="discord.html">Discord</a>
+            <a href="/contact">Contact</a>
+        </nav>
+
+        <div class="hamburger-menu">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+    </div>
+    <div class="imageholder">
+        <h1>Jump Legends</h1>
+    </div>
+    <div class="faq-container">
+        <h1>Frequently Asked Questions</h1>
+
+        <div class="faq-item">
+            <input type="checkbox" id="faq1">
+            <label for="faq1">Wie seit ihr auf euer Projekt gekommen?</label>
+            <div class="faq-content">
+                <p>Angefangen hat es alles mit dem Inhaber (Semaja), der sich dazu entschloss seine Python und Pygame Skills erweitern wollte. Der Co Inhaber hat sich das Spiel eines Tages angeschaut und wollte dieses weiterführen.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <input type="checkbox" id="faq2">
+            <label for="faq2">Kann ich mich an dem Projekt beteiligen?</label>
+            <div class="faq-content">
+                <p>Gerne!!! Bitte schau dir in unserem Discord den Channel <a href="https://discord.com/channels/921046101107286057/922148571770404924">#😮¦du-möchtest-dich-an-unserem-projekt-beiteiligen</a> an!</p>
+            </div>
+        </div>
+
+        <!-- Add more FAQ items as needed -->
+
+    </div>
+    <footer>
+        <p>&copy; <span id="currentYear"></span> Jump Legends all rights reserved.</p>
+    </footer>
+
+    <script>
+        document.getElementById("currentYear").innerHTML = new Date().getFullYear();
+    </script>
+</body>
+
+</html>
