@@ -48,7 +48,7 @@ nav a {
 .imageholder .bgtxt {
     color: white;
     text-align: center;
-    font-size: 7rem;
+    font-size: 10rem;
 }
 
 .header-active {
@@ -88,7 +88,7 @@ footer {
 
 @media screen and (max-width: 768px) {
     .imageholder .bgtxt {
-        font-size: 2rem;
+        font-size: 8rem;
     }
 
     .container-head {
@@ -148,12 +148,12 @@ footer {
 
 @media screen and (max-width: 600px) {
     .imageholder .bgtxt {
-        font-size: 2rem;
+        font-size: 6rem;
     }
 }
 
 @media screen and (max-width: 480px) {
     .imageholder .bgtxt {
-        font-size: 1rem;
+        font-size: 5rem;
     }
 }
