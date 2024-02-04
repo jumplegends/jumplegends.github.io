@@ -51,6 +51,104 @@ nav a {
     font-size: 10rem;
 }
 
+#wrap {
+    margin: 20px auto;
+    margin-top: 60px;
+    text-align: center;
+}
+
+.download {
+    position: relative;
+    display: inline-block;
+    height: 50px;
+    width: 200px;
+    line-height: 50px;
+    padding: 0;
+    border-radius: 50px;
+    background: #fdfdfd;
+    border: 2px solid #0099cc;
+    margin: 10px;
+    transition: .5s;
+}
+
+.download {
+    border: 2px solid #d04033;
+}
+
+.download:hover {
+    background-color: #3d4b3a;
+}
+
+.download:hover span.circle2 {
+    left: 100%;
+    margin-left: -45px;
+    background-color: #d04033;
+    color: #fff;
+}
+
+.download:hover span.circle2 {
+    color: #3d4b3a;
+}
+
+.download:hover span.title2 {
+    left: 40px;
+    opacity: 0;
+}
+
+.download:hover span.title-hover2 {
+    opacity: 1;
+    left: 40px;
+}
+
+.download span.circle2 {
+    display: block;
+    background-color: #3d4b3a;
+    color: #fff;
+    position: absolute;
+    float: left;
+    margin: 5px;
+    line-height: 42px;
+    height: 40px;
+    width: 40px;
+    top: 0;
+    left: 0;
+    transition: .5s;
+    border-radius: 50%;
+}
+
+.download span.circle2 {
+    background-color: #66342c;
+}
+
+.download span.title2,
+.download span.title-hover2 {
+    position: absolute;
+    left: 90px;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 16px;
+    font-weight: bold;
+    color: #30abd5;
+    transition: .5s;
+}
+
+.download span.title2,
+.download span.title-hover2 {
+    color: #d04033;
+    left: 80px;
+}
+
+.download span.title-hover2 {
+    left: 80px;
+    opacity: 0;
+}
+
+.download span.title-hover2 {
+    color: #fff;
+}
+
+
+
 .header-active {
     background-color: #333;
 }
@@ -110,15 +208,16 @@ footer {
     cursor: pointer;
 }
 
-.faq-item input:checked + label {
+.faq-item input:checked+label {
     background-color: #282828;
 }
 
-.faq-item input:checked ~ .faq-content {
+.faq-item input:checked~.faq-content {
     border: 3px solid #333;
     border-radius: 0 0 25px 25px;
     padding: 10px;
-    max-height: 250px; /* Adjust the max-height as needed */
+    max-height: 250px;
+    /* Adjust the max-height as needed */
 }
 
 @media screen and (max-width: 768px) {
