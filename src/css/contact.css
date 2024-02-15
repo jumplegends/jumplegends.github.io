@@ -2,7 +2,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Arial', sans-serif;
-    background-color: #f0f0f0;
+    background-color: #333;
     transition: background-color 0.3s ease;
     overflow-x: hidden;
 }
@@ -74,18 +74,49 @@ nav a {
 .container {
     text-align: center;
     justify-content: center;
+    color: white;
 }
 
 .contact-container {
-    width: 100vw;
     display: flex;
-    flex-direction: row;
+    justify-content: center;
+    margin-top: 30px; /* Platzierung des Kontaktcontainers */
 }
 
-.contact-container img {
-    width: 50%;
-    height: auto;
+.contact-item {
+    width: 45%; /* Breite der Kontaktitems */
+    margin: 0 10px; /* Abstand zwischen den Kontaktitems */
+    padding: 20px; /* Innenabstand der Kontaktitems */
+    border-radius: 10px; /* Abrundung der Ecken */
+    background-color: #222; /* Hintergrundfarbe der Kontaktitems */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Schatten um die Kontaktitems */
+    transition: transform 0.3s ease;
 }
+
+.contact-item:hover {
+    transform: translateY(-5px); /* Effekt beim Hover */
+}
+
+.contact-item img {
+    width: 100px; /* Größe des Kontakticons */
+    margin-bottom: 10px; /* Abstand zwischen dem Kontakticon und dem Text */
+}
+
+.contact-item p {
+    margin: 0; /* Entfernen des Standardabstands des Absatzes */
+    color: white; /* Textfarbe */
+}
+
+.contact-item a {
+    font-size: 1.2rem; /* Schriftgröße für den Link */
+    color: aqua; /* Linkfarbe */
+    text-decoration: none;
+}
+
+.contact-item a:hover {
+    text-decoration: underline; /* Unterstrich beim Hover über den Link */
+}
+
 
 footer {
     color: #7f8c8d;

@@ -2,7 +2,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Arial', sans-serif;
-    background-color: #f0f0f0;
+    background-color: #333;
     transition: background-color 0.3s ease;
     overflow-x: hidden;
 }
@@ -66,15 +66,30 @@ nav a {
 .bar {
     width: 25px;
     height: 3px;
-    background-color: white;
+    background-color: #333;
     margin: 5px 0;
     transition: background-color 0.3s ease;
 }
 
 .container {
-    text-align: center;
-    justify-content: center;
+    text-align: left; /* Linksbündig */
+    padding: 20px;
+    background-color: #222; /* Weißer Hintergrund */
+    margin: 20px;
+    border-radius: 5px; /* Abgerundete Ecken */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Leichte Schatten */
 }
+
+.container h1 {
+    color: white; /* Dunklere Farbe für Überschriften */
+    margin-bottom: 20px; /* Mehr Abstand unterhalb der Überschrift */
+}
+
+.container p {
+    color: white;
+    line-height: 1.6; /* Etwas mehr Zeilenabstand */
+}
+
 
 footer {
     color: #7f8c8d;
